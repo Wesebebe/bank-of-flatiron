@@ -4,9 +4,9 @@
 }
 
 input {
-    width: 25% !important;
-    margin-right: 0.25em !important;
-    margin-left: 0.25em !important;
+    width: 25%;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
 }
 
 body {
@@ -20,8 +20,9 @@ body {
 }
 
 
-.App-header {
-    background-color: #222;
+h2 {
+    /* background-color: #222; */
+    background-color: blueviolet;
     padding: 20px;
     color: white;
 }

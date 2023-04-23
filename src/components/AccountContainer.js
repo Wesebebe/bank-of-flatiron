@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TransactionsList from "./TransactionsList";
 import Search from "./Search";
-import TransactionForm from "./TransactionForm";
+import AddTransactionForm from "./AddTransactionForm";
 
 function AccountContainer() {
   const [transaction, setTransaction] = useState([])
@@ -17,7 +17,7 @@ function AccountContainer() {
   return (
     <div>
       <Search handleSearch={handleSearch} />
-      <TransactionForm />
+      <AddTransactionForm />
       <TransactionsList transactions={transaction} />
     </div>
   );

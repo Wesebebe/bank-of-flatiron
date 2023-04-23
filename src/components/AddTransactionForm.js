@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import Transaction from "./Transaction";
+import Transaction from "./Transaction";
 
-function TransactionForm() {
+function AddTransactionForm() {
   const [date, setDate] = useState("")
   const [description, setDescription] = useState("")
   const [category, setCategory] = useState("")
@@ -12,12 +12,7 @@ function TransactionForm() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
-        date: date,
-        description: description,
-        category: category,
-        amount: amount,
-      }),
+      body: JSON.stringify({Transaction}),
     });
      alert("added successfully")
   }
@@ -38,4 +33,4 @@ function TransactionForm() {
   );
 }
 
-export default TransactionForm;
+export default AddTransactionForm;
