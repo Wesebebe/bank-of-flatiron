@@ -26,3 +26,8 @@ h2 {
     padding: 20px;
     color: white;
 }
+
+.table{
+    width: 100%;
+    height: auto;
+}

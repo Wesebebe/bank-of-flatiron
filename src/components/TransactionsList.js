@@ -6,7 +6,7 @@ function TransactionsList({transactions}) {
     return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
   })
   return (
-    <table className="ui celled striped padded table">
+    <table className="table">
       <tbody>
         <tr>
           <th>
