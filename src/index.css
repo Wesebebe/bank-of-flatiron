@@ -44,7 +44,7 @@ h2 {
     padding: 0; */
 }
 
-input:placeholder-shown {
+.inputField:placeholder-shown {
     background-color: ivory;
     border: 2px solid darkorange;
     border-radius: 5px;
