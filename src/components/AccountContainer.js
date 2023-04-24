@@ -16,8 +16,8 @@ function AccountContainer() {
   }
   return (
     <div>
-      <Search handleSearch={handleSearch} />
-      <AddTransactionForm />
+      <Search handleSearch={handleSearch} /><br></br>
+      <AddTransactionForm /><br></br>
       <TransactionsList transactions={transaction} />
     </div>
   );

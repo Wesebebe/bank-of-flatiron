@@ -6,7 +6,7 @@ function TransactionsList({transactions}) {
     return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
   })
   return (
-    <table className="table">
+    <table className="ui celled striped padded table">
       <tbody>
         <tr>
           <th>
@@ -22,7 +22,6 @@ function TransactionsList({transactions}) {
             <h3 className="ui center aligned header">Amount</h3>
           </th>
         </tr>
-        {/* render a list of <Transaction> components here */}
         {list}
       </tbody>
     </table>
