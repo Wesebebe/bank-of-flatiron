@@ -106,31 +106,18 @@
       "id": 15
     },
     {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
+      "date": "2023-04-27",
+      "description": "mama mboga",
+      "category": "Food",
+      "amount": "200",
       "id": 20
     },
     {
+      "date": "2023-04-28",
+      "description": "Suit for uncle George",
+      "category": "gift",
+      "amount": "50000",
       "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "id": 23
-    },
-    {
-      "id": 24
     }
   ]
 }

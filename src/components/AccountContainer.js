@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TransactionsList from "./TransactionsList";
 import Search from "./Search";
-import AddTransactionForm from "./AddTransactionForm";
+// import AddTransactionForm from "./AddTransactionForm";
 
 function AccountContainer() {
   const [transaction, setTransaction] = useState([])
@@ -11,14 +11,19 @@ function AccountContainer() {
       .then((resp) => resp.json())
       .then(transaction => setTransaction(transaction))
   }, [query])
+
   function handleSearch(e) {
     setQuery(e.target.value)
+  }
+
+  function handleAddItem(newItem) {
+    setTransaction([...transaction, newItem])
   }
   return (
     <div>
       <Search handleSearch={handleSearch} /><br></br>
-      <AddTransactionForm /><br></br>
-      <TransactionsList transactions={transaction} />
+      {/* <AddTransactionForm /><br></br> */}
+      <TransactionsList transactions={transaction} onAddItem={handleAddItem}/>
     </div>
   );
 }

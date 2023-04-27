@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 import Transaction from "./Transaction";
 
-function AddTransactionForm() {
+function AddTransactionForm({onAddItem}) {
   const [date, setDate] = useState("")
   const [description, setDescription] = useState("")
   const [category, setCategory] = useState("")
   const [amount, setAmount] = useState("")
+
   function handleSubmit(e) {
     e.preventDefault()
+     const itemData = {
+     date: date,
+     description: description,
+     category: category,
+     amount: amount
+  };
     fetch("http://localhost:8001/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({Transaction}),
-    });
+    })
+      .then((r) => r.json())
+      .then((newItem) => onAddItem(newItem));
      
   }
   return (
